@@ -1,0 +1,41 @@
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_type";
+@import "global/_fonts";
+@import "global/_svg-sprite";
+@import "global/_animations";
+
+@import "components/_btn";
+
+
+@import "components/_page";
+@import "components/_page-header";
+@import "components/_navigation";
+@import "components/_functions";
+@import "components/_search";
+@import "components/_singin";
+@import "components/_cart";
+
+
+@import "components/_grid--old";
+@import "components/_grid";
+@import "components/_page-content";
+@import "components/_breadcrumbs";
+@import "components/_slider";
+@import "components/_action";
+@import "components/_info-blog";
+@import "components/_subscribe";
+@import "components/_catalog-item";
+@import "components/_sorting";
+@import "components/_pagination";
+@import "components/_about-us";
+@import "components/_map";
+
+
+@import "components/_page-footer";
+@import "components/_footer-social";
+@import "components/_footer-nav";
+@import "components/_footer-copyright";
+
+
+@import "components/_popup-writetous";

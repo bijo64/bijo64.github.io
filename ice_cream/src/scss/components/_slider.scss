@@ -1,0 +1,117 @@
+
+.slider-input {
+  display: none;
+}
+.slider-input[id="toggle-1"]:checked ~ .page,
+.slider-input[id="toggle-2"]:checked ~ .page,
+.slider-input[id="toggle-3"]:checked ~ .page {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+.slider-input[id="toggle-1"]:checked ~ .page {
+  background-color: #849d8f;
+  background-image: url(../img/bg_slide-1.png);
+}
+.slider-input[id="toggle-2"]:checked ~ .page {
+  background-color: #8996a6;
+  background-image: url(../img/bg_slide-2.png);
+}
+.slider-input[id="toggle-3"]:checked ~ .page {
+  background-color: #9d8b84;
+  background-image: url(../img/bg_slide-3.png);
+}
+
+.slider {
+  position: relative;
+  min-height: 565px;
+  margin-bottom: 4px;
+
+
+
+  &__slide {
+    display: none;
+    min-height: 565px;
+    max-height:700px;
+    overflow: auto;
+    padding-top: 314px;
+    text-align: center;
+  }
+
+
+  &__title {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: $font-w--black;
+    color: $c_white;
+  }
+
+
+  &__btn {
+    position: absolute;
+    bottom: 37px;
+    left: 50%;
+    transform:translateX(-50%);
+  }
+
+
+  &__controls {
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+  }
+
+
+  &__toggle {
+    display: block;
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border:2px solid $c_white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+
+  &__toggle:hover {
+    background-color: rgba(248, 247, 244, 0.4);
+  }
+
+
+  &__toggle:active {
+    background-color: $c_white;
+  }
+
+
+  &-input[id="toggle-1"]:checked ~ .page &__slide--1 {
+    display: block;
+  }
+
+
+  &-input[id="toggle-2"]:checked ~ .page &__slide--2 {
+    display: block;
+  }
+
+
+  &-input[id="toggle-3"]:checked ~ .page &__slide--3 {
+    display: block;
+  }
+
+
+
+  &-input[id="toggle-1"]:checked ~ .page &__toggle[for="toggle-1"] {
+    background-color: $bg_white;
+  }
+
+
+  &-input[id="toggle-2"]:checked ~ .page &__toggle[for="toggle-2"] {
+    background-color: $bg_white;
+  }
+
+
+  &-input[id="toggle-3"]:checked ~ .page &__toggle[for="toggle-3"] {
+    background-color: $bg_white;
+  }
+}

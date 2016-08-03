@@ -1,0 +1,42 @@
+.footer-nav {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  margin-top: 30px;
+
+  &__list {
+    @include list-null;
+    margin-left: 17px;
+    width: 320px;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 170px;
+  }
+  &__item:nth-child(2n-1) {
+    margin-right: 18px;
+    width:120px;
+  }
+
+  // &__list:first-child {
+  //   margin-right: 34px;
+  // }
+
+
+  &__link {
+    @include link-white;
+    position: relative;
+    font-size: 13px;
+  }
+
+
+  &__link-svg {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform:translateY(-50%);
+    fill:#fff;
+  }
+}

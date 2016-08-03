@@ -1,0 +1,63 @@
+.subscribe {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-top: 29px;
+  padding-bottom: 33px;
+  padding-left: 20px;
+  padding-right: 19px;
+
+  border-radius: 14px;
+  background-color: #f8f7f4;
+
+  border: 6px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(45deg, #f8f7f4, #f8f7f4), repeating-linear-gradient(135deg,#f8f7f4,#f8f7f4 4px,#92cdff 5px,#92cdff 11px,#f8f7f4 12px,#f8f7f4 18px,#fe9e90 19px,#fe9e90 25px,#f8f7f4 26px,#f8f7f4 28px);
+
+
+  &__text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: $font-w--regular;
+    color: #5a5a5a;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__input {
+    @include input-null;
+    @include input;
+    flex-grow: 1;
+    height: 44px;
+    padding:  11px;
+    font-size: 14px;
+  }
+
+
+  &__input:hover,
+  &__input:focus {
+    padding: 0 10px;
+  }
+
+
+  &__input-label {
+    display: flex;
+    width: 100px;
+    flex-grow: 1;
+  }
+
+
+  &__input-name {
+    top: 4px;
+    left: 11px;
+  }
+}

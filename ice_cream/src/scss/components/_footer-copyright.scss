@@ -1,0 +1,31 @@
+.footer-copyright {
+  width: 267px;
+  margin-top: 19px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction:row-reverse;
+
+
+  &__link-svg {
+    fill: #fff;
+    margin-bottom: 3px;
+    margin-left: 2px;
+  }
+
+  &__link-svg:hover {
+    fill: $c_link-hover--white;
+  }
+
+
+  &__text {
+    font-size: 12px;
+    font-weight: $font-w--regular;
+    color: #fefefe;
+  }
+
+
+  &__link {
+    @include link-white;
+  }
+}

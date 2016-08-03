@@ -1,0 +1,49 @@
+.about-us {
+  background-image: url(../img/bg_aboutus.jpg);
+  background-repeat: repeat;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 15px;
+  border-radius: 13px;
+
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: $font-w--medium;
+    line-height: 30px;
+    color: #323232;
+  }
+
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  &__feature {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 48.85%;
+    position: relative;
+    margin-bottom: 9px;
+    padding-top: 12px;
+    padding-left: 56px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+  }
+
+
+  &__svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: #323232;
+  }
+}

@@ -1,0 +1,86 @@
+.map {
+  position: relative;
+  width: 100%;
+  height: 430px;
+
+
+
+  &__image {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height:  430px;
+  }
+
+
+  &__container {
+    @include container;
+    position: relative;
+    z-index: 1;
+    pointer-events:none;
+  }
+
+
+  &__container-inner {
+    position: relative;
+    height: 430px;
+    z-index: 1;
+    margin-left: 2.3%;
+    margin-right: 2.3%;
+  }
+
+
+  &__contact {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 0;
+    width: 302px;
+    min-height: 305px;
+    max-height: 410px;
+    padding-top: 29px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transform:translateY(-50%);
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: auto;
+    pointer-events:auto;
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: $font-w--regular;
+    color: #343434;
+  }
+
+
+  &__text:last-of-type {
+    margin-bottom: 25px;
+  }
+
+
+  &__adress,
+  &__phone {
+    display: block;
+    margin-top: 3px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #343434;
+    font-weight: $font-w--bold;
+  }
+
+
+  &__phone {
+    margin-bottom: 3px;
+  }
+
+
+  &__map {
+
+  }
+}

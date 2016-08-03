@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+svg {
+  fill-rule: evenodd;
+}
+body {
+  // min-width: $min-w;
+  @include m-p-0;
+  font-family: $font-family--main;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: $font-w--regular;
+  line-height: 1.3;
+  color:$c_base;
+  background-color: $bg_base-green;
+}
+h1 {
+  @include m-p-0;
+  font-family: $font-family--main;
+  font-style: normal;
+  font-size: 30px;
+  line-height: normal;
+  color: $c_base;
+}
+h2 {
+  @include m-p-0;
+  font-family: $font-family--main;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.3;
+  color: $c_base;
+}
+p {
+  @include m-p-0;
+}
+hr {
+  @include m-p-0;
+  @include input-null;
+  height: 1px;
+  background-color: #cacac7;
+}
+.container {
+  @include container;
+
+  &__wrap {
+    padding-left: 2.3%;
+    padding-right: 2.3%;
+    // outline: 1px solid red;
+
+  }
+}
+div,nav,li,img,p {
+  // outline: 1px solid blue;
+}

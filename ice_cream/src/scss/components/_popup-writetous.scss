@@ -1,0 +1,125 @@
+.popup-writetous {
+  content: "";
+  z-index: 999;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+
+  &__wrap {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    min-height: 442px;
+    width: 477px;
+    padding-top: 17px;
+    padding-bottom: 27px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+    background-color: $bg_form;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    transition:transform 0.3s;
+    fill:#000;
+    fill-rule:nonzero;
+  }
+  &__close:hover {
+    transform: rotate(180deg) scale(1.2);
+    fill:$c_link-hover--black;
+  }
+
+
+  &__close:active {
+    transform: rotate(180deg) scale(0.9);
+    fill:$c_link-hover--black;
+  }
+
+
+  &__title {
+    margin-bottom: 21px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: $font-w--medium;
+  }
+
+
+  &__input {
+    @include input-null;
+    @include input;
+    height: 44px;
+    width: 267px;
+    padding: 9px 21px;
+    margin-bottom: 20px;
+    font-weight: $font-w--regular;
+  }
+
+  &__input-label {
+    margin-bottom: 20px;
+  }
+
+
+  &__input-name {
+    left: 19px;
+  }
+
+
+  &__input:hover,
+  &__input:focus {
+    padding: 8px 20px;
+  }
+
+
+  &__input--textarea {
+    min-width: 428px;
+    max-width: 428px;
+    min-height: 155px;
+    max-height: 155px;
+    padding: 9px 21px;
+  }
+
+
+  &__input--textarea + &__input-name {
+    top: -152px;
+  }
+
+
+  &__input--textarea:hover {
+    padding: 8px 20px;
+    border: $bd-input--hover;
+  }
+
+
+  &__input--textarea:focus {
+    padding: 8px 20px;
+    border: $bd-input--focus;
+  }
+
+
+  &__btn {
+    text-align: right;
+  }
+
+
+  &__show {
+    animation-name: popup-show;
+    animation-duration: 1s;
+  }
+
+  &__static {
+    display: block;
+  }
+}

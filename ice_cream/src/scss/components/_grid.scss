@@ -1,0 +1,59 @@
+// number of columns variable
+$items: 12;
+//margin between column
+$margin: 2.3%;
+// grid container
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -$margin / 2;
+  margin-right: -$margin / 2;
+}
+
+.grid__col {
+  flex: 0 0 100%;
+  padding-left: $margin / 2;
+  padding-right: $margin / 2;
+  display: flex;
+}
+
+// breakpoints map
+$breakpoints: (
+  xs: 480px,
+  sm: 480px,
+  md: 720px,
+  lg: 960px,
+  xl: 1020px,
+  xx: 1200px
+  );
+
+// media query mixin
+@mixin break($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @media (min-width: map-get($breakpoints, $key)) {
+    .container,
+    .map__container {
+      min-width: map-get($breakpoints, $key);
+      max-width: map-get($breakpoints,xx);
+    }
+    body {
+      min-width: map-get($breakpoints, $key);
+    }
+  }
+}
+
+
+@each $key, $value in $breakpoints {
+  @media (min-width: map-get($breakpoints, $key)) {
+    @for $i from 1 through $items {
+      .grid__col--#{$key}-#{$i} {
+        flex: 0 0 #{$i / $items * 100%};
+      }
+    }
+  }
+}
