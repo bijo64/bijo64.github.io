@@ -1,7 +1,7 @@
-1 
+﻿1 
 
-git config --global user.name 'имя_пользователя_github'
-git config --global user.email 'ваша_электронная_почта'
+git config --global user.name 'имя_пользователя'
+git config --global user.email 'электронная_почта'
 git config --global color.diff 'auto'
 git config --global color.status 'auto'
 git config --global color.branch 'auto'
