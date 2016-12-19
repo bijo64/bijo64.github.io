@@ -1,0 +1,117 @@
+.presentation {
+  position: relative;
+  background-color: #000000;
+  background-image: url("../img/bg/bg-presentation.jpg");
+}
+
+/* header */
+
+.header {
+  @extend %clearfix;
+}
+
+.logo {
+  float: left;
+  width: 20%;
+  padding-top: 10px;
+}
+
+.nav {
+  float: right;
+  width: 80%;
+  padding-top: 30px;
+  text-align: right;
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    padding-left: 32px;
+    @include ubuntu(medium);
+    vertical-align: middle;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 11px;
+      width: 5px;
+      height: 5px;
+      margin-top: -3px;
+      border-radius: 50%;
+      background-color: #ffffff;
+    }
+
+    &:first-child,
+    &:last-child {
+      padding-left: 16px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+/* END: header */
+
+/* content */
+
+.presentation__content {
+  position: relative;
+  transform: translate(0, -35%);
+  @extend %clearfix;
+}
+
+.presentation__picture {
+  float: left;
+  width: 52%;
+}
+
+.presentation__text {
+  float: right;
+  width: 47%;
+  padding-top: 110px;
+  margin-left: 1%;
+}
+
+.presentation__dscr {
+  margin: 0;
+  @include lifehack(medium);
+  font-size: 6.5rem;
+  line-height: 1;
+  text-transform: lowercase;
+  color: #ffffff;
+}
+
+.presentation__arrow {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 40px;
+  width: 29px;
+  height: 30px;
+  padding: 2px;
+  margin: auto;
+  transition: 0.2s;
+
+  &:hover {
+    width: 35px;
+    height: 36px;
+    bottom: 50px;
+  }
+}
+
+/* END: content */
