@@ -1,4 +1,7 @@
-﻿1 
+
+https://www.youtube.com/watch?v=tRTckrrCME4
+
+1 
 
 git config --global user.name 'имя_пользователя'
 git config --global user.email 'электронная_почта'
