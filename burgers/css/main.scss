@@ -1,15 +1,18 @@
-// variables
+
 $orange: #f9b43b;
 $red: #e45028;
 $gray: #2f3234;
 
-// base
+
 @import "layout/fonts";
 @import "layout/normalize.min";
 @import "layout/mixins";
 @import "layout/adjustment";
 
-// adjustment
+@import "libs/jquery.fullpage.min.css";
+@import "libs/owl.carousel.min.css";
+
+
 @import "sections/header";
 @import "sections/about";
 @import "sections/burgers";
