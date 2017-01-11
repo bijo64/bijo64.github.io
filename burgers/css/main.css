@@ -1037,7 +1037,7 @@ textarea {
   font-family: UbuntuBold, sans-serif;
   color: #e45028;
   padding-left: 20px;
-  background: url("../img/icons/phone.svg") 0 50% no-repeat; }
+  /*background: url("../img/icons/phone.svg") 0 50% no-repeat;*/ }
 
 .socials {
   display: inline-block;
